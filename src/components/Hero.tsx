@@ -32,8 +32,9 @@ const Hero = () => {
 
         <FadeIn delay={0.6}>
           <p className="font-display text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10">
-            Transformamos memorias familiares y trayectorias de vida en libros de autor
-            de edición limitada. Un patrimonio inmortal para las próximas generaciones.
+            Editamos libros personales de memorias. Una partner recoge sus testimonios y
+            documentos bajo confidencialidad; nuestros editores y diseñadores crean su
+            libro. La impresión se elige aparte y la asesoramos.
           </p>
         </FadeIn>
 
