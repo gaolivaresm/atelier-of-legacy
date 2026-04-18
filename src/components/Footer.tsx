@@ -20,8 +20,9 @@ const Footer = () => {
               Enlaces
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground font-sans">
-              <li><a href="#atelier" className="hover:text-primary transition-colors">Sobre Nosotros</a></li>
               <li><a href="#servicios" className="hover:text-primary transition-colors">Servicios</a></li>
+              <li><a href="#proceso" className="hover:text-primary transition-colors">Proceso</a></li>
+              <li><a href="#partners" className="hover:text-primary transition-colors">Programa de Partners</a></li>
               <li>
                 <a href="mailto:contacto@atelierlegado.cl" className="hover:text-primary transition-colors inline-flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5" /> contacto@atelierlegado.cl

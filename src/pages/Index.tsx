@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ValueProps from "@/components/ValueProps";
+import ServiceIncludes from "@/components/ServiceIncludes";
 import Process from "@/components/Process";
 import Niches from "@/components/Niches";
 import SocialProof from "@/components/SocialProof";
+import PartnersProgram from "@/components/PartnersProgram";
 import LeadMagnet from "@/components/LeadMagnet";
 import Footer from "@/components/Footer";
 
@@ -13,9 +15,11 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ValueProps />
+      <ServiceIncludes />
       <Process />
       <Niches />
       <SocialProof />
+      <PartnersProgram />
       <LeadMagnet />
       <Footer />
     </main>

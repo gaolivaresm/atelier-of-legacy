@@ -1,27 +1,34 @@
-import { Coffee, Search, Award } from "lucide-react";
+import { Phone, Mic, PenTool, BookOpen } from "lucide-react";
 import FadeIn from "./FadeIn";
 
 const steps = [
   {
     num: "01",
-    icon: Coffee,
-    title: "El Café del Legado",
+    icon: Phone,
+    title: "Contacto inicial",
     description:
-      "Nos reunimos en la calidez de su hogar o club para conocer los hitos que definen su trayectoria.",
+      "Nos contacta directamente o a través de una partner certificada. Definimos juntos el alcance de su proyecto de legado.",
   },
   {
     num: "02",
-    icon: Search,
-    title: "Edición y Rescate",
+    icon: Mic,
+    title: "Entrevista y recolección",
     description:
-      "Nos encargamos del levantamiento de información, transcripción de entrevistas y restauración de su archivo visual.",
+      "Una partner visita su hogar, firma el acuerdo de confidencialidad y recoge testimonios, fotografías y documentos. Puede entregarlos en mano o subirlos en línea.",
   },
   {
     num: "03",
-    icon: Award,
-    title: "La Obra Maestra",
+    icon: PenTool,
+    title: "Edición y diseño",
     description:
-      "Entrega de una edición limitada y numerada, lista para ser el tesoro de su familia.",
+      "Nuestro equipo de editores y diseñadores trabaja su manuscrito, restaura sus fotografías y compone la obra con dirección de arte de autor.",
+  },
+  {
+    num: "04",
+    icon: BookOpen,
+    title: "Asesoría de impresión",
+    description:
+      "Le acompañamos en la elección de papeles, encuadernación y tiraje de su edición impresa, cotizada según los materiales que elija.",
   },
 ];
 
@@ -43,7 +50,7 @@ const Process = () => {
 
         <div className="max-w-4xl mx-auto">
           {steps.map((step, i) => (
-            <FadeIn key={step.num} delay={0.2 * i}>
+            <FadeIn key={step.num} delay={0.15 * i}>
               <div className="flex gap-6 md:gap-10 mb-16 last:mb-0 items-start group">
                 {/* Number + line */}
                 <div className="flex flex-col items-center">
