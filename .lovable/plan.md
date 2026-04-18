@@ -1,61 +1,63 @@
 
-# Landing Page — Atelier de Legado
+# Reorientación del mensaje: modelo B2B2C con Partners
 
-Landing page de una sola página, elegante y patrimonial, para un atelier que transforma memorias familiares en libros de autor de edición limitada. Estilo visual premium: paleta oscura con acentos dorados, tipografía serif para títulos, mucho espacio en blanco, ritmo visual calmado.
+El usuario aclara el modelo de negocio: corredores de inmuebles actúan como **partners** (consiguen clientes + opcionalmente hacen la entrevista). El sitio debe ser **explícito** sobre el servicio: editan libros de memorias personales, una partner recoge testimonios/documentos/NDA, editores y diseñadores trabajan el libro, y la impresión va aparte (asesorada).
 
----
+Hay dos audiencias en el sitio: **clientes finales** (qué reciben) y **partners** (cómo se ganan comisiones). Necesito reflejar ambas sin perder la elegancia patrimonial.
 
-## 1. Navegación Superior
-- Logo "Atelier de Legado" con tipografía serif refinada
-- Links: Inicio · Atelier · Servicios · Proceso · Contacto
-- Estilo semitransparente que se funde con el hero
+## Cambios al sitio
 
-## 2. Hero Section — "Su Historia. Elevada a Obra de Arte."
-- Fondo con gradiente oscuro elegante (simulando la atmósfera de la imagen de referencia)
-- Titular grande en serif, subtítulo descriptivo sobre el servicio
-- Botón CTA dorado: "Solicitar una Valoración de Legado"
-- Nota sutil: "Reciba sin costo su valoración de legado"
+### 1. Hero — más explícito sobre el servicio
+- Subtítulo reescrito para dejar claro: "Editamos libros personales de memorias. Una partner recoge sus testimonios y documentos bajo confidencialidad; nuestros editores y diseñadores crean su libro. La impresión se elige aparte y la asesoramos."
+- Mantener el titular emocional actual.
 
-## 3. Propuesta de Valor — 3 Cápsulas
-- **Tecnología de Rescate (IA)**: Restauración de fotos con IA a calidad 4K
-- **Curaduría de Autor**: 15 años de dirección de arte, objetos de culto
-- **Materialidad Noble**: Papeles de algodón, linos italianos, encuadernación artesanal para +100 años
-- Cada cápsula con ícono dorado minimalista y texto breve
+### 2. Nueva sección "Qué incluye el servicio" (reemplaza/complementa Proceso)
+Lista clara y explícita:
+- Visita de una partner certificada para recoger testimonios y documentos
+- Firma de acuerdo de confidencialidad (NDA)
+- Edición profesional del manuscrito
+- Diseño y dirección de arte del libro
+- Restauración de fotografías con IA
+- Asesoría en la elección de la edición impresa
+- **No incluye:** la impresión final (se cotiza aparte según materiales y tiraje elegida por el cliente)
 
-## 4. Proceso "Guante Blanco" — 3 Pasos
-- Diseño de timeline vertical o tarjetas numeradas
-- Paso 1: El Café del Legado — reunión en su hogar
-- Paso 2: Edición y Rescate — levantamiento, transcripción, restauración
-- Paso 3: La Obra Maestra — entrega de edición limitada y numerada
+### 3. Reescribir "Proceso Guante Blanco" — 4 pasos claros
+1. **Contacto inicial** — vía partner o directamente
+2. **Entrevista y recolección** — partner visita, firma NDA, recoge testimonios y archivos (puede subirse online o entregarse en mano)
+3. **Edición y diseño** — equipo trabaja el libro
+4. **Asesoría de impresión** — elige edición impresa con nuestra guía
 
-## 5. Segmentos de Nicho
-- Dos tarjetas lado a lado:
-  - **Bitácoras Navales**: homenaje a la carrera naval
-  - **Memorias de Inmigración**: relatos de quienes construyeron en Chile
-- Estilo visual diferenciado con fondos sutiles
+### 4. Nueva sección "Programa de Partners"
+Dirigida a corredores de inmuebles y profesionales con buenos contactos:
+- Encabezado: "Programa de Partners — Convierta sus contactos en legados"
+- Explicación del modelo:
+  - **5% de comisión** por cada cliente que refiere
+  - **+5% adicional** si la partner realiza la entrevista (1 hora)
+  - Capacitación online incluida + guía de entrevista
+  - Modalidad flexible: subir contenido online o entrega en mano
+- CTA secundario: "Postular como Partner"
+- Tono: profesional pero discreto, no rompe la elegancia
 
-## 6. Autoridad y Confianza (Social Proof)
-- Testimonio destacado del Almirante (R) con comillas elegantes
-- Mención del segmento exclusivo ABC1, Región de Valparaíso
-- Nota: "Solo aceptamos 6 proyectos de legado al año"
+### 5. Ajustes menores
+- **Navbar**: agregar link "Partners"
+- **LeadMagnet**: mantener, pero clarificar que es para clientes finales
+- **SocialProof**: sin cambios
 
-## 7. Lead Magnet — Guía Gratuita
-- Sección con fondo diferenciado
-- Título: "Cómo comenzar a construir su legado familiar hoy"
-- Descripción de la guía
-- Formulario con campos Nombre y Email (visual, sin funcionalidad real por ahora)
-- Botón: "Descargar Guía de Legado (PDF)"
+## Estructura final de la página
+```text
+Navbar (+ link Partners)
+Hero (subtítulo más explícito)
+ValueProps (3 pilares — sin cambios mayores)
+ServiceIncludes (NUEVO — qué incluye / qué no)
+Process (reescrito a 4 pasos)
+Niches (Bitácoras Navales / Memorias de Inmigración — sin cambios)
+SocialProof (sin cambios)
+PartnersProgram (NUEVO — para corredores)
+LeadMagnet (sin cambios)
+Footer (+ link Partners)
+```
 
-## 8. Footer
-- Logo y ubicación: Atelier Viña del Mar, Chile
-- Links: Sobre Nosotros · Servicios · Email
-- Nota: "Atención personalizada y bajo estricta confidencialidad"
-- Íconos sociales (Facebook, Twitter/X, LinkedIn)
-- Copyright © 2024 Atelier de Legado
-
-## Estilo Visual
-- **Paleta**: Fondo oscuro (#1a1a2e o similar), textos claros, acentos dorados (#c9a96e)
-- **Tipografía**: Serif elegante (Playfair Display) para títulos, sans-serif limpia para cuerpo
-- **Animaciones**: Fade-in suave al hacer scroll, transiciones delicadas
-- **Responsive**: Adaptado para móvil y desktop
-- **Imágenes**: Placeholders con gradientes y overlays que mantienen la atmósfera premium
+## Notas de tono
+- Para clientes finales: mantener lenguaje patrimonial, calmado, exclusivo.
+- Para partners: profesional, claro en números (5% + 5%), sin sonar "comercial agresivo". Usar términos como "colaboración", "embajadores del legado".
+- Toda funcionalidad sigue siendo **solo visual** (sin backend).
