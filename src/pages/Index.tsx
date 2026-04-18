@@ -5,7 +5,9 @@ import ServiceIncludes from "@/components/ServiceIncludes";
 import Process from "@/components/Process";
 import Niches from "@/components/Niches";
 import SocialProof from "@/components/SocialProof";
+import PricingComparison from "@/components/PricingComparison";
 import PartnersProgram from "@/components/PartnersProgram";
+import FAQ from "@/components/FAQ";
 import LeadMagnet from "@/components/LeadMagnet";
 import Footer from "@/components/Footer";
 
@@ -19,7 +21,9 @@ const Index = () => {
       <Process />
       <Niches />
       <SocialProof />
+      <PricingComparison />
       <PartnersProgram />
+      <FAQ />
       <LeadMagnet />
       <Footer />
     </main>

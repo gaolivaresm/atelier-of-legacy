@@ -14,8 +14,9 @@ const Hero = () => {
           alt="Libro artesanal de legado familiar"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/40 to-background/85" />
+        <div className="absolute inset-0 bg-background/30" />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl pt-20">
@@ -31,10 +32,11 @@ const Hero = () => {
         </FadeIn>
 
         <FadeIn delay={0.6}>
-          <p className="font-display text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-10">
-            Editamos libros personales de memorias. Una partner recoge sus testimonios y
-            documentos bajo confidencialidad; nuestros editores y diseñadores crean su
-            libro. La impresión se elige aparte y la asesoramos.
+          <p className="font-display text-xl md:text-2xl lg:text-3xl text-foreground/95 leading-relaxed max-w-3xl mx-auto mb-10 drop-shadow-lg">
+            Un servicio exclusivo para transformar su testimonio, fotografías y documentos
+            en un <span className="text-gradient-gold font-medium">Libro de Memorias</span> de
+            autor. Una partner certificada recoge su historia bajo confidencialidad; nuestros
+            editores y diseñadores la convierten en una obra patrimonial.
           </p>
         </FadeIn>
 
