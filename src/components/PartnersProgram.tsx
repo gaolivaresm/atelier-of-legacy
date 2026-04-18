@@ -67,7 +67,7 @@ const PartnersProgram = () => {
         <FadeIn delay={0.4}>
           <div className="text-center">
             <a
-              href="mailto:partners@atelierlegado.cl?subject=Postulación%20como%20Partner"
+              href="mailto:hola@taett.cl?subject=Postulación%20como%20Partner"
               className="inline-block border border-primary/60 hover:bg-primary hover:text-primary-foreground text-primary font-sans text-sm tracking-widest uppercase px-10 py-4 transition-all duration-300"
             >
               Postular como Partner
