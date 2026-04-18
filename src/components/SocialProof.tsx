@@ -35,7 +35,7 @@ const SocialProof = () => {
               </p>
             </div>
             <p className="text-muted-foreground text-xs mt-4 tracking-wide font-sans">
-              Servicio exclusivo · Región de Valparaíso · Plan, Recreo y Reñaca
+              Servicio exclusivo · Valparaíso y Viña del Mar
             </p>
           </div>
         </FadeIn>
