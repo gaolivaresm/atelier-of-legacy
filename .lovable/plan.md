@@ -1,63 +1,59 @@
 
-# Reorientación del mensaje: modelo B2B2C con Partners
+# Mejoras: Hero más explícito, FAQ y comparativa de precio
 
-El usuario aclara el modelo de negocio: corredores de inmuebles actúan como **partners** (consiguen clientes + opcionalmente hacen la entrevista). El sitio debe ser **explícito** sobre el servicio: editan libros de memorias personales, una partner recoge testimonios/documentos/NDA, editores y diseñadores trabajan el libro, y la impresión va aparte (asesorada).
+## 1. Hero — primer párrafo más explícito + mejor contraste
+- Reescribir subtítulo para vender claramente: "Un servicio exclusivo para transformar su testimonio, fotografías y documentos en un **Libro de Memorias** de autor. Una partner certificada recoge su historia bajo confidencialidad; nuestros editores y diseñadores la convierten en una obra patrimonial."
+- Mejorar contraste: cambiar `text-muted-foreground` por `text-foreground/90` y oscurecer más los gradientes del overlay para que el texto resalte sobre la imagen de fondo.
+- Aumentar peso/tamaño tipográfico del párrafo si hace falta.
 
-Hay dos audiencias en el sitio: **clientes finales** (qué reciben) y **partners** (cómo se ganan comisiones). Necesito reflejar ambas sin perder la elegancia patrimonial.
+## 2. Nueva sección "Inversión y Valor" (comparativa de mercado)
+Insertar entre `SocialProof` y `PartnersProgram`. Tono patrimonial, no agresivo.
 
-## Cambios al sitio
+Layout: dos tarjetas comparativas lado a lado + bloque conclusión.
 
-### 1. Hero — más explícito sobre el servicio
-- Subtítulo reescrito para dejar claro: "Editamos libros personales de memorias. Una partner recoge sus testimonios y documentos bajo confidencialidad; nuestros editores y diseñadores crean su libro. La impresión se elige aparte y la asesoramos."
-- Mantener el titular emocional actual.
-
-### 2. Nueva sección "Qué incluye el servicio" (reemplaza/complementa Proceso)
-Lista clara y explícita:
-- Visita de una partner certificada para recoger testimonios y documentos
-- Firma de acuerdo de confidencialidad (NDA)
-- Edición profesional del manuscrito
-- Diseño y dirección de arte del libro
-- Restauración de fotografías con IA
-- Asesoría en la elección de la edición impresa
-- **No incluye:** la impresión final (se cotiza aparte según materiales y tiraje elegida por el cliente)
-
-### 3. Reescribir "Proceso Guante Blanco" — 4 pasos claros
-1. **Contacto inicial** — vía partner o directamente
-2. **Entrevista y recolección** — partner visita, firma NDA, recoge testimonios y archivos (puede subirse online o entregarse en mano)
-3. **Edición y diseño** — equipo trabaja el libro
-4. **Asesoría de impresión** — elige edición impresa con nuestra guía
-
-### 4. Nueva sección "Programa de Partners"
-Dirigida a corredores de inmuebles y profesionales con buenos contactos:
-- Encabezado: "Programa de Partners — Convierta sus contactos en legados"
-- Explicación del modelo:
-  - **5% de comisión** por cada cliente que refiere
-  - **+5% adicional** si la partner realiza la entrevista (1 hora)
-  - Capacitación online incluida + guía de entrevista
-  - Modalidad flexible: subir contenido online o entrega en mano
-- CTA secundario: "Postular como Partner"
-- Tono: profesional pero discreto, no rompe la elegancia
-
-### 5. Ajustes menores
-- **Navbar**: agregar link "Partners"
-- **LeadMagnet**: mantener, pero clarificar que es para clientes finales
-- **SocialProof**: sin cambios
-
-## Estructura final de la página
 ```text
-Navbar (+ link Partners)
-Hero (subtítulo más explícito)
-ValueProps (3 pilares — sin cambios mayores)
-ServiceIncludes (NUEVO — qué incluye / qué no)
-Process (reescrito a 4 pasos)
-Niches (Bitácoras Navales / Memorias de Inmigración — sin cambios)
-SocialProof (sin cambios)
-PartnersProgram (NUEVO — para corredores)
-LeadMagnet (sin cambios)
-Footer (+ link Partners)
+┌─────────────────────────┬─────────────────────────┐
+│  Mercado tradicional    │  Atelier de Legado      │
+│  • Tiempos: 12–18 meses │  • Tiempos: 3–5 meses   │
+│  • Procesos rígidos     │  • Partner dedicada     │
+│  • Precio referencia    │  • 30% más accesible    │
+└─────────────────────────┴─────────────────────────┘
+        "70% más rápido · 30% más accesible"
 ```
 
-## Notas de tono
-- Para clientes finales: mantener lenguaje patrimonial, calmado, exclusivo.
-- Para partners: profesional, claro en números (5% + 5%), sin sonar "comercial agresivo". Usar términos como "colaboración", "embajadores del legado".
-- Toda funcionalidad sigue siendo **solo visual** (sin backend).
+- Tarjeta izquierda: estilo discreto (bordes neutros).
+- Tarjeta derecha: destacada con borde dorado y fondo sutil.
+- Cifras grandes en serif dorada (`70%` / `30%`).
+- Nota al pie: "Cifras estimadas en base a estudios de mercado del segmento de libros de autor en Chile."
+
+## 3. Nueva sección FAQ
+Insertar antes del `LeadMagnet`. Usar el componente `Accordion` de shadcn (ya disponible en el proyecto).
+
+Preguntas propuestas (mezclando audiencia cliente + partner):
+1. ¿Cuánto demora todo el proceso? (3–5 meses vs 12–18 del mercado)
+2. ¿Qué pasa con la confidencialidad de mis testimonios y documentos?
+3. ¿Cómo se entrega el material: en línea o en persona?
+4. ¿Por qué la impresión va aparte?
+5. ¿Cuánto cuesta aproximadamente vs el mercado? (30% más accesible, rangos referenciales sin cifra exacta)
+6. ¿Cómo funciona el programa de partners y las comisiones?
+7. ¿Cuántos proyectos toman al año? (máx. 6)
+
+Estilo: acordeón elegante, bordes sutiles dorados, tipografía serif en preguntas, sans en respuestas.
+
+## 4. Ajustes menores
+- **Navbar**: agregar link "Preguntas" que apunte a `#faq`.
+- **Index.tsx**: nuevo orden →
+  ```
+  Navbar → Hero → ValueProps → ServiceIncludes → Process → Niches
+  → SocialProof → PricingComparison (NUEVO) → PartnersProgram
+  → FAQ (NUEVO) → LeadMagnet → Footer
+  ```
+
+## Archivos a tocar
+- `src/components/Hero.tsx` (copy + contraste)
+- `src/components/PricingComparison.tsx` (NUEVO)
+- `src/components/FAQ.tsx` (NUEVO, usa `ui/accordion`)
+- `src/components/Navbar.tsx` (nuevo link)
+- `src/pages/Index.tsx` (montar nuevas secciones)
+
+Sin backend, todo visual.
