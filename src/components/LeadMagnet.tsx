@@ -62,7 +62,8 @@ const LeadMagnet = () => {
                 </h2>
                 <p className="text-muted-foreground text-sm md:text-base leading-relaxed font-sans mb-10 max-w-lg mx-auto">
                   Descargue nuestra guía exclusiva sobre cómo organizar sus archivos históricos
-                  y las 10 preguntas esenciales para entrevistar a sus padres.
+                  y las 10 preguntas esenciales para entrevistar a sus padres,
+                  y te contactamos para contarte más.
                 </p>
 
                 <form
